@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+ <!--
+    ① fill_parent
+设置一个视图的布局为fill_parent将强制性地使视图扩展至父元素大小。
+② match_parent
+Android 中match_parent和fill_parent意思一样，但match_parent更贴切，于是从2.2开始两个词都可以
+用，但2.3版本后建议使用match_parent。
+③ wrap_content
+自适应大小，根据内容自动拉伸，强制性地使视图扩展以便显示其全部内容。以TextView和ImageView控件为例，设置为
+wrap_content将完整显示其内部的文本和图像。布局元素将根据内容更改大小。
+
+ -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#98FB98"
+        android:text="one"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#FFFF00"
+        android:text="two"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#FF00FF"
+        android:text="three"
+        android:layout_weight="1" />
+
+</LinearLayout>

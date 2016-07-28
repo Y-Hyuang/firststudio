@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--要实现第一个的1:1的效果,只需要分别把两个LinearLayout的weight(权重)改成1和1就可以了
+用法归纳: 按比例划分水平方向:将涉及到的View的android:width属性设置为0dp,
+然后设置为android weight属性设置比例即可;
+类推,竖直方向,只需设android:height为0dp,然后设weight属性即可！-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#ADFF2F"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#DA70D6"
+        android:layout_weight="1" />
+
+</LinearLayout>
